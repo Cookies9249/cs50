@@ -1,0 +1,41 @@
+GET ?search?q=cats HTTP/1.1
+Host: www.google.com
+...
+
+http-server -> flask run
+- /path & /route
+- ?key=value
+
+-----
+FLASK
+-----
+- python framework
+
+Requirements:
+- app.py
+- requirements.txt      Python libraries
+- static/               Static files (images), CSS, JavaScript
+- templates/            HTML files, contains index.html
+- "from flask import Flask" in app.py
+
+-----------
+POST vs GET
+-----------
+- Use "methods=["POST"]" in app.route
+- Post doesn't get stored in URL
+
+- request.args          GET requests
+- request.form          POST requests
+
+---
+MVC
+---
+User -> Controller -> Model -> View
+Controller      .py files
+Model           .csv files
+View            .html, .css files
+
+
+<input type="checkbox">     checkbox list
+<input type="radio">        radio checklist
+<submit>                    drop-down box

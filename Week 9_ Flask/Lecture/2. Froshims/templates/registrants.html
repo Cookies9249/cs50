@@ -1,0 +1,37 @@
+{% extends "layout.html" %}
+
+{% block body %}
+
+    <h1>Registrants</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Sport</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for registrant in registrants %}
+                <tr>
+                    <td>{{ registrant.name }}</td>
+                    <td>{{ registrant.sport }}</td>
+                    <td>
+                        <form action="/deregister" method="post">
+                            <input name="id" type="hidden" value="{{ registrant.id }}">
+                            <input type="submit" value="Deregister">
+                        </form>
+                    </td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+    <form action="/">
+        <input type="submit" value="Back to Main Menu">
+    </form>
+
+{% endblock %}
+
+<!--name = request.form.get("name")
+    sport = request.form.get("sport")
+    return render_template("register.html", name=name sport=sport)-->

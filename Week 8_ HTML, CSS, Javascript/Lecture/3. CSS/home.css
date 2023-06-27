@@ -1,0 +1,49 @@
+/* CSS: Style*/
+
+/* Type Selectors */
+body
+{
+    color: red
+}
+
+/* Class Selectors (.) */
+.centered
+{
+    text-align: center;
+}
+.large
+{
+    font-size: large;
+}
+.medium
+{
+    font-size: medium;
+}
+.small
+{
+    font-size: small;
+}
+
+/* ID Selectors (#) */
+#first
+{
+    color: #00ff00;
+}
+
+/* Specific */
+main:hover
+{
+    color:blue;
+}
+
+/* Attribute Selectors */
+a[href="https://www.google.com"]
+{
+    color: orange;
+}
+
+/* '*=' = contained within */
+a[href*="youtube.com"]
+{
+    color: black;
+}
