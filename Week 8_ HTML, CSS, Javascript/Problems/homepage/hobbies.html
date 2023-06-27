@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <link href="styles.css" rel="stylesheet">
+        <meta name="viewport" content="intial-scale=1, width=device-width">
+
+        <title>My Education</title>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Welcome to My Homepage!</h1>
+        </div>
+
+        <div class="container">
+            <div class="section">
+                <h2>My Hobbies!</h2>
+
+                <div class="mb-3">Use the Box Below to Select a Category</div>
+                <select>
+                    <option selected disabled>Category</option>
+                    <option>Sports</option>
+                    <option>Subjects</option>
+                    <option>Instruments</option>
+                    <option>Other</option>
+                </select>
+
+                <h3>Category</h3>
+                <p>Select in List Above</p>
+
+            </div>
+        </div>
+
+        <div>
+            <a href="index.html">Back</a> | My Website | Cookies
+        </div>
+
+        <script>
+
+            let input = document.querySelector("select");
+            input.addEventListener("input", async function() {
+
+                if (input.value == "Sports") {
+                    document.querySelector("h3").innerHTML = "My Favourite Sports";
+                    document.querySelector("p").innerHTML = "<div>Soccer</div><div>Basketball</div><div>Swimming</div><div>Badminton</div>";
+                }
+                else if (input.value == "Subjects") {
+                    document.querySelector("h3").innerHTML = "My Favourite Subjects";
+                    document.querySelector("p").innerHTML = "<div>Math</div><div>Science</div><div>Computer Science</div><div>Physical Education</div>";
+                }
+                else if (input.value == "Instruments") {
+                    document.querySelector("h3").innerHTML = "My Favourite Instruments";
+                    document.querySelector("p").innerHTML = "<div>Piano</div><div>Trumpet</div><div>Recorder</div><div>Saxophone</div>";
+                }
+                else if (input.value == "Other") {
+                    document.querySelector("h3").innerHTML = "My Other Hobbies";
+                    document.querySelector("p").innerHTML = "<div>Cooking</div><div>Travelling</div><div>Camping</div><div>Gaming</div>";
+                }
+            });
+
+        </script>
+    </body>
+</html>

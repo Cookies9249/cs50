@@ -1,0 +1,105 @@
+---------------------------------------------------------------
+HTML
+---------------------------------------------------------------
+- View file with "http-server"
+
+Structure:
+<!DOCTYPE html>
+<html>
+    <head>
+        tag
+    </head>
+    <body>
+        tag
+    </body>
+</html>
+
+Usage:
+<tag attribute="">
+</tag>
+
+Tags:
+- Title, Heading (h), Paragraph (p), Division (div)
+- List: ul, ol; li
+- Table: thead, tbody; tr
+- Image (img), Video, iFrame
+- Linked Text: <a href="link">text</a>
+- Form: input, button
+
+Atrributes:
+https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes
+
+Comments:
+<!-- multi-line -->
+
+---------------------------------------------------------------
+CSS
+---------------------------------------------------------------
+HTML Implementation:
+- <style> </style>
+- <link href="source.css" rel="stylesheet">
+
+Structure:
+selector
+{
+    attribute: style;
+}
+
+Usage:
+Selector:        HTML Usage:          CSS Usage:
+- Type           <tag>                tag
+- Class          <tag class="name">   .name
+- ID             <tag id="name">      #name
+- Attribute      <tag>                tag[attribute]
+- Pseudo-class   <tag>                tag:pseudo-class
+
+Class vs ID:
+- ID: Single element
+- Class: Multiple elements
+
+Bootstrap:
+https://getbootstrap.com/docs/5.2/getting-started/introduction/
+
+Comments:
+/* multi-line */
+
+---------------------------------------------------------------
+Javascript
+---------------------------------------------------------------
+HTML Implementation:
+- <script> </script>
+- <script src="source.js"> </script>
+
+Structure:
+- let counter = 0;
+- counter += 1; counter++;
+- if (x < y) {}
+- while (x < y) {}
+- for (let x = 0; x < y; x++) {}
+- function name() {}
+
+Built-In Functions:
+- alert('text')
+- querySelector('selector')
+- addEventListener('event', result)
+
+Built-In Variables:
+- document      web-page variable
+
+Built-In Properties:
+- .value
+- .length
+- .style
+- .backgroundColor
+- .innerHTML
+
+Events:
+- click, drag, touchmove
+- blur, change, focus
+- keyup, keydown
+- mousedown, mouseup, mouseover
+- load, unload, submit
+
+Comments:
+// single-line
+/* multi-line */

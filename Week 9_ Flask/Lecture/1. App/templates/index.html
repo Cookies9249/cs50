@@ -1,0 +1,16 @@
+{% extends "layouts.html" %}
+
+{% block title %}
+
+    <title>hello</title>
+
+{% endblock %}
+
+{% block body %}
+
+    <form action="/greet" method="post">
+        <input autocomplete="off" autofocus name="name" required placeholder="Name" type="text">
+        <input type="submit">
+    </form>
+
+{% endblock %}

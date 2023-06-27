@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>Hello JavaScript</title>
+    </head>
+    <body>
+        <!-- <form onsubmit="greet(); return false;"> -->
+        <!-- return false: prevents submission to server -->
+        <form>
+            <!-- Creates 'text' input -->
+            <input autofocus autocomplete="off" id="name" placeholder="Name" type="text">
+            <!-- Creates 'submit' input -->
+            <input type="submit">
+        </form>
+
+        <!-- JavaScript addition -->
+        <script>
+
+            // greet function
+            function greet(e)
+            {
+                // sets name to value from element with id name
+                let name = document.querySelector('#name').value;
+                // creates pop-up alert with var name
+                alert("Hi, " + name);
+                e.preventDefault();
+            }
+
+            document.querySelector('form').addEventListener('submit', greet);
+
+            /*
+            ALTERNATIVE:
+            document.querySelector('form').addEventListener('submit', function() {
+                let name = document.querySelector('#name').value;
+                alert("hello, " + name);
+            });
+
+            */
+
+        </script>
+    </body>
+</html>

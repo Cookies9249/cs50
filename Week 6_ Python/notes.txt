@@ -1,0 +1,40 @@
+------------------
+C VS PYTHON SYNTAX
+------------------
+- printf("Hello World!\n");
+print("Hello World")
+
+- printf("Hello, %s\n", name);
+print("Hello, " + name)
+print(f"hello, {name}")
+
+- i = get_int("Int: ");
+i = int(input("Int: "))
+
+- int counter = 0;
+counter = 0
+
+- counter++;
+counter += 1
+
+- if (x < y) {}
+- else if (x > y) {}
+- else {}
+if x < y:
+elif y > x:
+else:
+
+- while (true) {}
+while True:
+
+- for (int i = 0; i < 3; i++) {}
+for i in [0, 1, 2]:
+for i in range(3):
+
+----------------------
+C VS PYTHON DATA TYPES
+----------------------
+string          ->  str
+bool            ->  bool
+int, long       ->  int
+float, double   ->  float
