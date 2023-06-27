@@ -1,0 +1,34 @@
+C - Create (CREATE, INSERT)
+R - Read (SELECT)
+U - Update (UPDATE)
+D - Delete (DELETE, DROP)
+
+DATA TYPES:
+- TEXT
+    - TEXT NOT NULL
+- BLOB (0s and 1s)
+- NUMERIC (dates, time)
+- REAL (floats)
+- INTEGER
+
+MODIFIERS:
+- AVG, COUNT
+- DISTINCT
+- UPPER, LOWER (case)
+- MAX, MIN
+- WHERE {bool = true}
+- LIKE {str}
+- ORDER BY, GROUP BY
+- LIMIT
+- BETWEEN
+- = (same), % (???)
+
+. = char
+.* = 0+ chars
+.+ = 1+ chars
+? = optional
+^ = input start
+$ = input end
+_ = 1 char
+[] = one of list
+[!] = not one of list
