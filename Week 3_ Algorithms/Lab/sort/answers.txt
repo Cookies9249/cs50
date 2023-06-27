@@ -1,0 +1,17 @@
+sort1 uses: Bubble Sort
+
+How do you know?:
+50k reversed: 5.803s, 50k sorted: 0.983s
+In bubble, reversed takes long (n^2) while sorted takes a very short time (n)
+
+sort2 uses: Merge Sort
+
+How do you know?:
+50k reversed: 1.611s, 50k sorted: 1.267s
+In merge, both reversed and sorted take a short time (n log n)
+
+sort3 uses: Selection Sort
+
+How do you know?:
+50k reversed: 4.081, 50k sorted: 3.689s
+In selection, both reversed and sorted take long (n^2)

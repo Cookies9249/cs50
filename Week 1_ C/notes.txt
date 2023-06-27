@@ -1,0 +1,66 @@
+#include <stdio.h>
+#include <cs50.h>
+
+/*
+Linux Command Line
+- ls                        list of files in directory
+- cd <directory>            change to <directory>                   . = current dir, .. = parent dir
+- pwd                       present working directory
+- mkdir <name>              make directory with <name>
+- cp <-> <file> <name>      copy <file> with <name>                 -: -r = copy all
+- rm <-> <file>             remove <file>                           -: -f = force, -r remove all, -fr force remove all
+- mv <file> <name>          rename <file> to <name>
+
+- code                      new code
+- make                      make file - change to binary
+- ./ <name>                 execute code
+
+Data Types:
+int, float, double, bool, string
+
+Arithmetic Operators:
++, -, *, /, % (mod)
+
+Logical Operators:
+&& (and), || (or), ! (not)
+
+Relational Operators:
+<, >, <=, >=, == (equal), != (not equal)
+
+Conditionals:
+- if / else if / else       if (expr) {...}     else if (expr) {...}    else {...}
+- switch
+- ?                         int var = (expr) ? result1 : result2;
+    eg. int x = (y = 5) ? 5 : 10;
+    if y = 5, int x = 5
+    else int x = 10
+
+Loops:
+- while loops               while (expr) {...}                      eg. while (x >= 0) {printf("x is positive\n")}
+- do while loops            do {...} while (expr)                   eg. do {x = get_int("Even: ")} while (x % 2 = 0)
+- for loops                 for (start; expr; increment) {...}      eg. for (int x = 0; x < 10; x++) {printf("%s", x)}
+
+
+*/
+
+// Example of Switch Conditional
+int main(void)
+{
+    int x = get_int("Count From: ");
+    switch(x)
+    {
+        case 5:
+            printf("Five, ");
+        case 4:
+            printf("Four, ");
+        case 3:
+            printf("Three, ");
+        case 2:
+            printf("Two, ");
+        case 1:
+            printf("One, ");
+        default:
+            printf("Blast Off!\n");
+    }
+}
+

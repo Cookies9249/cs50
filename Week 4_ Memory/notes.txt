@@ -1,0 +1,64 @@
+/*
+-----------
+HEXADECIMAL
+-----------
+RGB - combination of Red, Green, and Blue (0 to 255; 256 possibilities)
+
+Hexadecimal - 0 to 9 then A to F (16 digits)
+Written 0x0, 0x15, 0x1a3fb
+
+#000000 - Black
+#FFFFFF - White
+#FF0000 - Red
+#00FF00 - Green
+#0000FF - Blue
+
+#RRGGBB
+RR, GG, BB can each have 256 combinations
+
+--------
+POINTERS
+--------
+Stores location (specific byte) of a value
+
+int *p = &n;        sets p to address of int n
+int n = *p          sets n to the int at address p
+
+printf("%p", &n);   prints out address of n
+printf("%i", *p);   prints out int at address p
+
+Strings are pointers for chars
+A pointer is the address of the first char of a string
+typedef char *string;
+
+More in address.c
+
+---------------------
+DEFINING CUSTOM TYPES
+---------------------
+typedef a b
+when compiling, b is replaced by a
+
+ex. typedef char* string
+string is replaced by char* when compiling
+
+-------------------------
+DYNAMIC MEMORY ALLOCATION
+-------------------------
+mollac (memory allocate)
+Takes an int as input (how many bytes of memory you need)
+Outputs the ADDRESS of free space (assign mollac to a pointer)
+
+free
+Returns memory from mollac after finished using
+
+-----------
+CALL STACKS
+-----------
+
+
+-------------
+FILE POINTERS
+-------------
+
+*/
